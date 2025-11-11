@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>San Vicentino</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='css/output.css') }}"
+    />
+  </head>
+  <body>
+    <header class="sticky top-0 z-50 bg-blue-900/80 text-white p-4">
+      <div class="flex items-center">
+        <img
+          src="{{ url_for('static', filename='img/sanvicentino.png') }}"
+          alt="San Vicentino Logo"
+          class="rounded-4xl h-16 inline-block mr-4"
+        />
+        <h1 class="text-3xl font-bold">San Vicentino</h1>
+      </div>
+    </header>
+    <nav class="sticky top-24 z-40 w-full bg-blue-900/80">
+      <ul class="flex px-7 gap-10 py-3 text-sm font-bold">
+        <li>
+          <a
+            href="/"
+            class="text-white px-3 py-2 rounded-lg hover:bg-gray-300 transition-colors"
+          >
+            Inicio
+          </a>
+        </li>
+        <li>
+          <a
+            href="/"
+            class="text-white px-3 py-2 rounded-lg hover:bg-gray-300 transition-colors"
+          >
+            Nosotros
+          </a>
+        </li>
+        <li>
+          <a
+            href="/"
+            class="text-white px-3 py-2 rounded-lg hover:bg-gray-300 transition-colors"
+          >
+            Registrate
+          </a>
+        </li>
+        <img
+        src="{{ url_for('static', filename='img/carritoCompra.png') }}" 
+        alt="Decorative Line" 
+        class="w-7 h-7 ml-310">
+      </ul>
+    </nav>
+    <section class="p-10">
+        <h1 class="text-4xl font-bold mb-8 text-center">¡Bienvenido a San Vicentino!</h1>
+      <div class="flex gap-8">
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md flex-1 text-center">
+          <h2 class="text-2xl font-bold mb-4">Producto en oferta</h2>
+          <p class="mb-6">
+            Bidon de agua San Vicentino 20L a un precio especial.
+          </p>
+          <img
+            src="{{ url_for('static', filename='img/promo.png') }}"
+            alt="Tienda San Vicentino"
+            class="mx-auto rounded-lg shadow-lg"
+          />
+        </div>
+    
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md flex-1 text-center">
+          <h2 class="text-2xl font-bold mb-4">San Vicentino eleva tu vida</h2>
+          <p class="mb-6">
+            Tu producto de mejor calidad.
+          </p>
+          <img
+            src="{{ url_for('static', filename='img/promo2.png') }}"
+            alt="Tienda San Vicentino"
+            class="mx-auto rounded-lg shadow-lg"
+          />
+        </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md flex-1 text-center">
+          <h2 class="text-2xl font-bold mb-4">Bienvenido a San Vicentino</h2>
+          <p class="mb-6">
+            Tu tienda en línea de confianza para productos de alta calidad.
+          </p>
+          <img
+            src="{{ url_for('static', filename='img/promo3.png') }}"
+            alt="Tienda San Vicentino"
+            class="mx-auto rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
+    </section>
+
+        <section class="p-10">
+      <div class="flex gap-8">
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md flex-1 text-center">
+          <h2 class="text-2xl font-bold mb-4">Producto en oferta</h2>
+          <p class="mb-6">
+            Bidon de agua San Vicentino 20L a un precio especial.
+          </p>
+          <img
+            src="{{ url_for('static', filename='img/promo.png') }}"
+            alt="Tienda San Vicentino"
+            class="mx-auto rounded-lg shadow-lg"
+          />
+        </div>
+    
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md flex-1 text-center">
+          <h2 class="text-2xl font-bold mb-4">San Vicentino eleva tu vida</h2>
+          <p class="mb-6">
+            Tu producto de mejor calidad.
+          </p>
+          <img
+            src="{{ url_for('static', filename='img/promo2.png') }}"
+            alt="Tienda San Vicentino"
+            class="mx-auto rounded-lg shadow-lg"
+          />
+        </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md flex-1 text-center">
+          <h2 class="text-2xl font-bold mb-4">Bienvenido a San Vicentino</h2>
+          <p class="mb-6">
+            Tu tienda en línea de confianza para productos de alta calidad.
+          </p>
+          <img
+            src="{{ url_for('static', filename='img/promo3.png') }}"
+            alt="Tienda San Vicentino"
+            class="mx-auto rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-blue-900 text-white p-4 text-center">
+      &copy; 2025 San Vicentino. El agua más rica del mundo.
+    
+      <img
+        src="{{ url_for('static', filename='img/instagram.png') }}"
+        alt="San Vicentino Logo"
+        class=" h-8 inline-block ml-20">
+
+      <img 
+        src="{{ url_for('static', filename='img/facebook.png') }}"
+        alt="San Vicentino Logo"
+        class=" h-8 inline-block ml-20">
+
+      <img 
+        src="{{ url_for('static', filename='img/linkedin.png') }}"
+        alt="San Vicentino Logo"
+        class=" h-8 inline-block ml-20">
+      <img 
+        src="{{ url_for('static', filename='img/twitter.png') }}"
+        alt="San Vicentino Logo"
+        class=" h-8 inline-block ml-20">  
+    </footer>
+  </body>
+</html>
